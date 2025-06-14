@@ -1,4 +1,63 @@
 main,
 footer {
   display: flex;
+  background-color: aqua;
+}
+
+section.sidebar,section.sidebar nav{
+  background-color: yellow;
+}
+
+.container header{
+ background-color: #121d51;
+ justify-items: center;
+}
+
+section.sidebar > h3{
+  color: blue;
+  background-color: yellow;
+}
+
+#about+ p{
+  background-color: black;
+  color: white;
+}
+
+#services+ p{
+  background-color: green;
+  color: white;
+}
+
+footer div:first-child{
+  background-color: pink;
+}
+
+footer div:nth-child(2){
+  background-color: brown;
+  color: white;
+}
+
+footer div:last-child{
+  background-color: grey;
+}
+
+#services ~ul li:nth-child(even){
+  color: red;
+}
+
+#contact ~ul li::marker{
+  color: black;
+}
+
+#services+p+ul li::marker{
+  content: "○ ";
+}
+
+#contact ~ ul a{
+  color: red;
+} 
+
+.content img{
+  width: 100%;
+  height: auto;
 }
